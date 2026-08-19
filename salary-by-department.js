@@ -7,10 +7,9 @@ const employees = [
 ];
 
 const output = employees.reduce((acc,curr) => {
-    if(acc[curr.dept]){
+    if(!acc[curr.dept]){
         acc[curr.dept] = 0;
     }
-
     acc[curr.dept] += curr.salary;
     return acc;
 },{});
