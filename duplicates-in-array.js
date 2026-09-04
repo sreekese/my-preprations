@@ -9,7 +9,6 @@ for (const num of nums) {
         result = num;
         break;
     }
-
     seen.add(num);
 }
 
